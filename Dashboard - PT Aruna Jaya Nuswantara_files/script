@@ -1,0 +1,397 @@
+/* $Id $ */
+
+(function() {
+    'use strict';   //No i18n
+
+    var ZSITC = function(){
+        var config, surveyURL, container, frameNode, height;
+        
+        var frameStyle = ".sCWrap{position:fixed;width:320px;z-index:2247483646 !important;box-shadow:0 -7px 18px 0 rgba(0,0,0,.09);background:#fff;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;transition:all .3s;color:rgb(255, 255, 255);}.pR{position:relative}.pT10{padding-top:10px}.pB10{padding-bottom:10px}.zsPopalignright{text-align:right}.zsPopalignleft{text-align:left}.w10{width:10px}.icon_minimize{transform:scale(1.2)}.icon_minimize_card{ fill:rgb(255, 255, 255);}.icon_close_card{ stroke: rgb(255, 255, 255);}.mL5{margin-left:5px}.zsdIB{display: inline-block;}.zsmR10{margin-right:10px}.mR5{margin-right:5px}.clearFix:after{content:'';clear:both;display:block}.rotate180{transform:rotate(180deg)}.bandBar{height:36px;width:100%;background:#fff;border-bottom:1px solid #eee;box-sizing:border-box;padding:5px 10px;}.PrevNext{height:56px;padding:10px 30px}.cP{cursor:Pointer}.topBand .bandBar{border-bottom:0}.bottomBand .bandBar{border-top:1px solid #eee;position:absolute;bottom:0;left:0}.bottomBand .PrevNext{position:absolute;bottom:36px;left:0;width:100%;background:#fff}.bottomBand .popOutiframe{margin-bottom:36px}.BandBg{background:rgba(145,1,18,1)}.RightBottom{bottom:0;right:20px;transform-origin:right bottom}.LeftBottom{bottom:0;left:20px;transform-origin:left bottom}.RightTop{top:0px;right:20px;transform-origin:top right}.LeftTop{top:0px;left:20px;transform-origin:top left}.CenterPop{position:fixed;left:50%;top:50%;transform:translateX(-50%) translateY(-50%);}.surveyPopDevices{position:absolute;bottom:10px;left:0;width:100%}.surveyPopDevicesIcons{margin:0 auto;text-align:center}.sCWrap .editIFrame{width:100%!important;height:100%!important;box-sizing:border-box;border:0;}#minimize_icons_div,.minimalCloseBox{display:none}.sCWrapMinimize{bottom:0;}.sCWrapMinimize .popOutiframe{transition:height 0.3s ease-in;height:0;}.sCWrapMinimize.LeftTop .popOutiframe,.sCWrapMinimize.RightTop .popOutiframe{height:450px;max-height:80vh;}.scExpandPop{width:90%;height:36px;position:absolute;left:0;top:0;display:none;line-height:36px;text-indent:15px;}.sCWrapMinimize .scExpandPop{display:block;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}.popOutiframe{transition:height 0.3s ease-in;height:450px;max-height:80vh;}.sCWrapMinimize.RightTop, .sCWrapMinimize.LeftTop { position:fixed;top:calc(100vh - 36px) !important;}.sCWrapMinimize.CenterPop{position:fixed;left:calc(100% - 340px);transform:inherit;bottom:inherit !important;top:calc(100vh - 36px)}.sCWrapMinimize{ bottom: 0;}.zs_freeze{background:#000;width:100%;height:100vh;opacity:0.5;position:fixed;top:0;z-index:99999;}.zs_freeze+.zsiq_floatmain{z-index:224748346 !important}.zspopClo{cursor:pointer; display:inline-block;}";  //No i18n
+        var frameHTML = "<div class=\"sCWrap\" id=\"zsitc_container\" style=\"display: none;\"> \n<div class=\"zsPopalignright bandBar BandBg\"> \n<span class=\"scExpandPop zsPopalignleft cP\" id=\"zsitc_expand\">Take Survey</span> \n<span id=\"zsitc_minimize\" class=\"zsmR10 cP zsdIB\"> \n<svg width=\"10\" height=\"10\" xmlns=\"ht"+"tp://www.w3.org/2000/svg\"><path class=\"icon_minimize_card\" d=\"M.493 4.503h9v1h-9z\" fill-rule=\"evenodd\"/></svg> \n</span> \n<span id=\"zsitc_close\" class=\"zspopClo\"> \n<svg class=\"w10\" xmlns=\"ht"+"tp://www.w3.org/2000/svg\" viewBox=\"0 0 9.86 9.86\"><g><g><path class=\"icon_close_card\" d=\"M.78.78l8.29 8.29\"/><path class=\"icon_close_card\" d=\"M.77 9.09L9.09.77\"/></g></g></svg> \n</span> \n</div> \n<div class=\"popOutiframe\"> \n<iframe class=\"editIFrame\" id=\"zsitc_frame\"  allow=\"geolocation\" src=CARDFORMURL aync=1> \n</iframe> \n</div>";
+
+        function collectCustomVariableData() {
+            for(var i=0; i<config.vMaps.length; i++) {
+                var mapping = config.vMaps[i];
+                var param_value;
+                switch(mapping.var_type) {
+                    case 0: // url_param
+                        param_value = getQueryParam(mapping.var_name);
+                        break;
+                    case 1: // cookie
+                        param_value = getCookie(mapping.var_name);
+                        break;
+                    case 2: // script variable
+                        param_value = window[mapping.var_name];
+                        break;
+                }
+                if(mapping.c_var)
+                {
+                    (param_value)&&(surveyURL = addParam(surveyURL, mapping.c_var, param_value));
+                }
+                else
+                {
+                    if(mapping.c_var_id)
+                    {
+                        mapping.c_var = getLabelForVariable(mapping.c_var_id)
+                    }
+                    else if(mapping.r_var_id)
+                    {
+                        mapping.c_var = getLabelForVariable(mapping.r_var_id)
+                    }
+                    if(mapping.c_var !== undefined) {
+                        (param_value)&&(surveyURL = addParam(surveyURL, mapping.c_var, param_value));
+                    }
+                }
+            }
+        }
+        function getLabelForVariable(var_id) {
+             var var_map = [{"var_msg":"companyId","var_id":"617686000000053069"},{"var_msg":"userId","var_id":"617686000000053071"},{"var_msg":"userRole","var_id":"617686000000053073"},{"var_msg":"date","var_id":"617686000000053075"},{"var_msg":"fullname","var_id":"617686000007038035"},{"var_msg":"email","var_id":"617686000007038043"},{"var_msg":"phone","var_id":"617686000007038051"}];
+             for(var i=0; i < var_map.length; i++){
+                if(var_map[i] && var_id == var_map[i].var_id){
+                    return var_map[i].var_msg;
+                }
+             }
+        }
+        function buildFrameHTML() {
+            if(config.surveyEnded || config.surveyActive) {
+                return;
+            }
+            collectCustomVariableData();
+            
+            var s = document.createElement('style');
+            s.appendChild(document.createTextNode(frameStyle));
+            document.head.appendChild(s);
+            
+            var d1 = document.createElement('div');
+            d1.innerHTML = frameHTML.replace(/CARDFORMURL/, surveyURL);
+            document.body.appendChild(d1);
+            var d2 = document.createElement('div');
+            d2.classList.add('zs_freeze');  //No i18n
+            d2.style.display = 'none';
+            document.body.appendChild(d2);
+
+            container = document.getElementById('zsitc_container');
+            frameNode = document.getElementById('zsitc_frame');
+
+            initEventListeners();
+        }
+
+        function initEventListeners() {
+            var expButton = document.getElementById('zsitc_expand'), minButton = document.getElementById('zsitc_minimize'), closeButton = document.getElementById('zsitc_close'), freezeNode = document.getElementsByClassName('zs_freeze')[0], zsitc_container = document.getElementById('zsitc_container'), popOutiframe = document.getElementsByClassName('popOutiframe')[0];   //No i18n
+            expButton.addEventListener('click', function(){
+                handleHeight();
+                container.classList.remove('sCWrapMinimize');   //No i18n
+                minButton.style.display = 'inline-block';
+                freezeNode.style.display = 'block';
+                if(config.minimizeView)
+                {
+                    var cookieObject = JSON.parse(getCookie('zs_popup_'+ config.unique_id));   //No i18n
+                    var minimizeObject = cookieObject?cookieObject:{};
+                    if(minimizeObject.minimized){
+                        if(!minimizeObject.closed)
+                        
+                        {
+                            document.cookie = 'zs_popup_'+ config.unique_id + '=; Path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;';    
+                        }
+                        else
+                        {
+                            delete minimizeObject.minimized;
+                            var date = new Date();
+                            var expireTime = date.getTime() + 1000*60*60*24*365;
+                            date.setTime(expireTime);
+                            document.cookie = 'zs_popup_'+ config.unique_id +'='+JSON.stringify(minimizeObject) +';expires='+date.toUTCString()+'; Path=/;';
+                    }
+                    }
+                }
+            });
+            minButton.addEventListener('click', function(){
+                popOutiframe.style.height = 0;
+                if(popOutiframe.style.minHeight){
+                popOutiframe.style.minHeight = 0;}
+                container.classList.add('sCWrapMinimize');  //No i18n
+                minButton.style.display = 'none';
+                freezeNode.style.display = 'none';
+                if(config.minimizeView)
+                {  
+                    var cookieObject = JSON.parse(getCookie('zs_popup_'+ config.unique_id));   //No i18n
+                    var minimizeObject = cookieObject?cookieObject:{};
+                    if(!minimizeObject.minimized)
+                    {
+                        var date = new Date();
+                        var expireTime = date.getTime() + 1000*60*60*24*365;
+                        date.setTime(expireTime);
+                        minimizeObject.minimized = true;
+                        document.cookie = 'zs_popup_'+ config.unique_id +'='+JSON.stringify(minimizeObject) +';expires='+date.toUTCString()+'; Path=/;';
+                    }
+                }
+            });
+            closeButton.addEventListener('click', function(){
+                if(config.displayPeriod!==1) {
+                    zsitc_container.parentElement.removeChild(zsitc_container);
+                    freezeNode.parentElement.removeChild(freezeNode);
+                    config.surveyEnded = true;
+                } else {
+                    zsitc_container.style.display = 'none';
+                    freezeNode.style.display = 'none';
+                }
+                if(config.closeView)
+                {
+                    var cookieObject = JSON.parse(getCookie('zs_popup_'+ config.unique_id));   //No i18n
+                    var closeObject = cookieObject?cookieObject:{};
+                    if(!closeObject.closed)
+                    {
+                        var date = new Date();
+                        var expireTime = date.getTime() + 1000*60*60*24*365;
+                        date.setTime(expireTime);
+                        closeObject.closed = true;
+                        document.cookie = 'zs_popup_'+ config.unique_id +'='+JSON.stringify(closeObject) +';expires='+date.toUTCString()+'; Path=/;';
+                        if(config.displayPeriod === 1)
+                        {
+                            window.removeEventListener('beforeunload', exitIntent);
+                        }
+                    }
+                }
+            });
+            frameNode.addEventListener('load', function(){
+                renderView();
+            });
+            window.addEventListener( "message",
+                function (e) {  
+                    var popupJSON = e.data;
+                    if(popupJSON.isCardView && popupJSON.continueSurvey != "null"){
+                            document.getElementById('zsitc_expand').innerHTML = popupJSON.continueSurvey;
+                    }
+                    if(popupJSON.isCardView && popupJSON.questionHeight){
+                        if(config.heightType == 1){
+                            var popOutiframe = document.getElementsByClassName('popOutiframe')[0];
+                            if(popupJSON.questionHeight > window.innerHeight)
+                            {
+                                popOutiframe.style.maxHeight = '85vh';  //No i18n
+                            }
+                            else
+                            {
+                                popOutiframe.style.maxHeight = config.maxHeight+"px";  //No i18n
+                            }
+                            if(popOutiframe.style.height != '0px'){
+                                popOutiframe.style.height = popupJSON.questionHeight+"px";
+                            }
+                            height = popupJSON.questionHeight;
+                        }
+                    }
+                    if(popupJSON.isCardView && popupJSON.innerContentType){
+                        if(popupJSON.innerContentType === "response_restriction" && config.hideEndPage){
+                            if(popupJSON.surveyLinkInvalid == "null")
+                            {
+                                config.closeView = 0;
+                                closeButton.click();
+                                return;
+                            }
+                        }   
+                    }
+                },false);
+        }
+
+        function handleHeight(){
+            var popOutiframe = document.getElementsByClassName('popOutiframe')[0];
+            if(config.heightType || config.height){
+                if(config.height)
+                {
+                    popOutiframe.style.height = config.height+"px";
+                }
+                if(config.heightType){
+                    popOutiframe.style.minHeight = config.minHeight+"px";  //No i18n
+                    popOutiframe.style.maxHeight = config.maxHeight+"px";  //No i18n
+                    if(height){
+                        popOutiframe.style.height = height+"px";
+                        if(height > window.innerHeight)
+                        {
+                            popOutiframe.style.maxHeight = '85vh';  //No i18n
+                        }
+                    }
+                }
+            }
+            else
+            {
+                popOutiframe.style.height = "450px";
+            }
+        }
+
+        function exitIntent(event)
+        {
+            var freezeNode = document.getElementsByClassName('zs_freeze')[0];
+            event.preventDefault();
+            event.returnValue = '';
+            //show frame
+            container.style.display = 'block';
+            if(!container.classList.contains('sCWrapMinimize')) {
+                freezeNode.style.display = 'block';
+            }
+            config.surveyActive = true;
+            window.onunload = function() {
+                //hide frame
+                container.style.display = 'none';
+                freezeNode.style.display = 'none';
+            }
+        }
+
+        function renderView() {
+            var cardPos = ['RightBottom','LeftBottom','CenterPop','RightTop','LeftTop'][config.position];   //No i18n
+            var freezeNode = document.getElementsByClassName('zs_freeze')[0];
+            var startBandMinimized = false;
+            container.classList.add(cardPos, 'topBand');  //No i18n
+            handleHeight();
+            if(config.minimizeView){
+                var minimizebject = JSON.parse(getCookie('zs_popup_'+ config.unique_id));   //No i18n
+                if(minimizebject){
+                    if(minimizebject.minimized){
+                        startBandMinimized = true;
+                    }
+                }
+            }
+            switch(config.displayPeriod) {
+                case 0: // on_page_start
+                    showFrame();
+                    break;
+                case 1: // on_page_end
+                    window.addEventListener('beforeunload', exitIntent);
+                    break;
+                case 2: // on_timeout
+                    setTimeout(function(){
+                        showFrame();
+                    }, (config.timeout * 1000));
+                    break;
+                case 3: // on_page_scroll
+                    window.addEventListener('scroll', function() {
+                        var docElement = document.documentElement;
+                        if((window.scrollY/docElement.scrollHeight*100 > config.pageScrollAmount) || (window.pageYOffset >= docElement.scrollHeight-window.innerHeight)) {
+                            showFrame();
+                        }
+                    });
+                    break;
+                default:
+                    showFrame();
+                    break;
+            }
+            (startBandMinimized)&&(minimizeFrame());
+
+            function showFrame() {
+                container.style.display = 'block';
+                if(!container.classList.contains('sCWrapMinimize')) {
+                    freezeNode.style.display = 'block';
+                }
+                config.surveyActive = true;
+            }
+            function hideFrame() {
+                container.style.display = 'none';
+                freezeNode.style.display = 'none';
+            }
+            function minimizeFrame() {
+                var popOutiframe = document.getElementsByClassName('popOutiframe')[0];
+                popOutiframe.style.height = 0+"px";
+                if(popOutiframe.style.minHeight){
+                popOutiframe.style.minHeight = 0+"px";}  //No i18n
+                container.classList.add('sCWrapMinimize');  //No i18n
+                document.getElementById('zsitc_minimize').style.display = 'none';
+                freezeNode.style.display = 'none';
+            }
+        }
+
+        function addParam(url, name, value) {
+            return url + (url.indexOf('?')===-1 ? "?" : "&") + name + "=" + encodeURIComponent(value);
+        }
+        function getQueryParam(name) {
+            var params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return null;
+        }
+
+        return {
+            initialize: function() {
+                var args = window.zs_intercept.p[0];
+                config = {
+                    pages: 'all',   //No i18n
+                    chosenPages: [],
+                    displayPeriod: 0,
+                    timeout: 0,
+                    pageScrollAmount: 0,
+                    position: 0,
+                    vMaps: [],
+                    minimizeView: 0,
+                    closeView: 0
+                };
+                var customConfig = args[2];
+                
+                if(customConfig.customURLPath!==undefined) {
+                    surveyURL = args[0]+'/zsc/'+customConfig.customURLPath+'/'+args[1];
+                }
+                else{
+        		surveyURL = args[0]+'/zsc/'+args[1];
+                }
+                
+                if(customConfig.lang!==undefined) {
+                    surveyURL = addParam(surveyURL, "lang", customConfig.lang); //No i18n
+                }
+                config = Object.assign(config, customConfig);
+                config.unique_id = args[1];
+                if(config.closeView){
+                    var closeObject = JSON.parse(getCookie('zs_popup_'+ config.unique_id));   //No i18n
+                    if(closeObject){
+                        if(closeObject.closed){
+                         return;
+                        }
+                    }
+                }
+                
+                if(config.chosenPages.length===0 || config.chosenPages.indexOf(window.location.pathname)!==-1) {	//No i18n
+                    if(config.displayPeriod===4) {
+                        window.zsShowFrame = buildFrameHTML;
+                    } else {
+                        buildFrameHTML();
+                    }
+                }
+            }
+        }
+    
+    }();
+    ZSITC.initialize();
+    /* polyfills */
+    (function() {
+        if (typeof Object.assign != 'function') {
+            (function () {
+                Object.assign = function (target) {
+                    if (target === undefined || target === null) {
+                        throw new TypeError('Cannot convert undefined or null to object');  //No i18n
+                    }
+    
+                    var output = Object(target);
+                    for (var index = 1; index < arguments.length; index++) {
+                        var source = arguments[index];
+                        if (source !== undefined && source !== null) {
+                            for (var nextKey in source) {
+                                if (source.hasOwnProperty(nextKey)) {
+                                    output[nextKey] = source[nextKey];
+                                }
+                            }
+                        }
+                    }
+                    return output;
+                };
+            })();
+        }
+        /* var assign=Object.assign||function(r){for(var n,a=1;a<arguments.length;a++){n=arguments[a]||{};for(var s in n)n.hasOwnProperty(s)&&(r[s]=n[s])}return r}; */
+    })();
+})();
