@@ -1,0 +1,540 @@
+[data-v-66679074] [data-pixel-component="MpPopoverTrigger"]:not(:disabled):focus, [data-v-66679074] [data-pixel-component="MpPopoverTrigger"]:not(:disabled):hover {
+  box-shadow: var(--shadows-outer);
+  outline-color: var(--colors-blue-400);
+  outline-width: 1px;
+  border-color: #0000 !important;
+}
+
+[data-v-71f30e83] .form-control:not(:disabled):focus, [data-v-71f30e83] .form-control:not(:disabled):hover {
+  box-shadow: var(--shadows-outer) !important;
+  outline: 1px solid !important;
+  outline-color: var(--colors-blue-400) !important;
+  border-color: #0000 !important;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ [type="button"]:not(:disabled), body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ [type="reset"]:not(:disabled), body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ [type="submit"]:not(:disabled), body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ button:not(:disabled) {
+  cursor: pointer;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-primary:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-primary:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #00468c;
+  border-color: #003f7f;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-primary:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #2677c980;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-secondary:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-secondary:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #5e5e5e;
+  border-color: #575757;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-secondary:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-secondary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #8c8c8c80;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-success:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-success:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #006c42;
+  border-color: #005f3a;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-success:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-success:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #26ad7980;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-info:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-info:not(:disabled):not(.disabled):active {
+  color: #212529;
+  background-color: #ffe166;
+  border-color: #ffdf59;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-info:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-info:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #decd8780;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-warning:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-warning:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #cc9200;
+  border-color: #bf8900;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-warning:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-warning:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #dea10680;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-danger:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-danger:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #ab331b;
+  border-color: #a03019;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-danger:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-danger:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #dd5d4380;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-light:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-light:not(:disabled):not(.disabled):active {
+  color: #212529;
+  background-color: #e2e2e2;
+  border-color: #dbdbdb;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-light:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-light:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #dadbdc80;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-dark:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-dark:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #080808;
+  border-color: #010101;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-dark:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-dark:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #42424280;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-jurnal:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-jurnal:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #0077ab;
+  border-color: #006e9e;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-jurnal:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-jurnal:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #26aae380;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-talenta:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-talenta:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #962129;
+  border-color: #8c1f26;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-talenta:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-talenta:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #c94a5280;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-klikpajak:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-klikpajak:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #c65701;
+  border-color: #ba5101;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-klikpajak:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-klikpajak:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #fa832780;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-mekari:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-mekari:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #4b1fdb;
+  border-color: #481ed0;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-mekari:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-mekari:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #8363e980;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-slate:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-slate:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #5e5e5e;
+  border-color: #575757;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-slate:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-slate:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #8c8c8c80;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-muted:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-muted:not(:disabled):not(.disabled):active {
+  color: #212529;
+  background-color: #9b9b9b;
+  border-color: #949494;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-muted:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-muted:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #9d9f9f80;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-smoke:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-smoke:not(:disabled):not(.disabled):active {
+  color: #212529;
+  background-color: #c9c9c9;
+  border-color: #c2c2c2;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-smoke:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-smoke:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #c4c5c580;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-cloud:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-cloud:not(:disabled):not(.disabled):active {
+  color: #212529;
+  background-color: #d2d9e4;
+  border-color: #cbd3df;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-cloud:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-cloud:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #d4d6d980;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-link:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-link:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #0040df;
+  border-color: #003dd2;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-link:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-link:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #3670ff80;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-white:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-white:not(:disabled):not(.disabled):active {
+  color: #212529;
+  background-color: #e6e6e6;
+  border-color: #dfdfdf;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-white:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-white:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #dddddf80;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-primary:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-primary:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #005fbf;
+  border-color: #005fbf;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-primary:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #005fbf80;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-secondary:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-secondary:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #777;
+  border-color: #777;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-secondary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #78787880;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-success:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-success:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #009f61;
+  border-color: #009f61;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-success:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-success:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #009f6180;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-info:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-info:not(:disabled):not(.disabled):active {
+  color: #212529;
+  background-color: #ffeb99;
+  border-color: #ffeb99;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-info:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-info:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #ffeb9980;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-warning:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-warning:not(:disabled):not(.disabled):active {
+  color: #212529;
+  background-color: #ffb700;
+  border-color: #ffb700;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-warning:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-warning:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #ffb70080;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-danger:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-danger:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #d74022;
+  border-color: #d74022;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-danger:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-danger:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #d7402280;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-light:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-light:not(:disabled):not(.disabled):active {
+  color: #212529;
+  background-color: #fbfbfb;
+  border-color: #fbfbfb;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-light:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-light:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #fafafa80;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-dark:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-dark:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #212121;
+  border-color: #212121;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-dark:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-dark:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #21212180;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-jurnal:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-jurnal:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #009bde;
+  border-color: #009bde;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-jurnal:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-jurnal:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #009bde80;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-talenta:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-talenta:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #c02a34;
+  border-color: #c02a34;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-talenta:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-talenta:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #c02a3480;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-klikpajak:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-klikpajak:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #f96d01;
+  border-color: #f96d01;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-klikpajak:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-klikpajak:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #f96d0180;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-mekari:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-mekari:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #6d48e5;
+  border-color: #6d48e5;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-mekari:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-mekari:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #6d48e580;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-slate:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-slate:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #777;
+  border-color: #777;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-slate:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-slate:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #78787880;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-muted:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-muted:not(:disabled):not(.disabled):active {
+  color: #212529;
+  background-color: #b4b4b4;
+  border-color: #b4b4b4;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-muted:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-muted:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #b5b5b580;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-smoke:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-smoke:not(:disabled):not(.disabled):active {
+  color: #212529;
+  background-color: #e2e2e2;
+  border-color: #e2e2e2;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-smoke:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-smoke:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #e3e3e380;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-cloud:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-cloud:not(:disabled):not(.disabled):active {
+  color: #212529;
+  background-color: #f2f4f7;
+  border-color: #f2f4f7;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-cloud:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-cloud:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #f2f4f780;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-link:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-link:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #1357ff;
+  border-color: #1357ff;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-link:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-link:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #1357ff80;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-white:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-white:not(:disabled):not(.disabled):active {
+  color: #212529;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-white:not(:disabled):not(.disabled).active:focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-outline-white:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 .2rem #ffffff80;
+}
+
+@media print {
+  @page {
+  }
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .close:not(:disabled):not(.disabled):focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .close:not(:disabled):not(.disabled):hover {
+  opacity: .75;
+}
+
+@font-face {
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-link:not(:disabled):not(.disabled):active {
+  color: #1357ff;
+  background-color: #0000;
+  border-color: #0000;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-ghost:not(:disabled):not(.disabled):hover, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-icon-only:not(:disabled):not(.disabled):hover {
+  background-color: #f2f4f7;
+  border-color: #f2f4f7;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-ghost:not(:disabled):not(.disabled):focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-icon-only:not(:disabled):not(.disabled):focus {
+  background-color: #0000;
+  border-color: #1357ff;
+  box-shadow: 0 0 4px 1px #1357ff;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-basic:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-basic:not(:disabled):not(.disabled):active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-secondary:not(:disabled):not(.disabled).active, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-secondary:not(:disabled):not(.disabled):active {
+  color: #777;
+  background-color: #fbfbfb;
+  border: 1px solid #e2e2e2;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-basic:not(:disabled):not(.disabled):hover, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-secondary:not(:disabled):not(.disabled):hover {
+  border-color: #005fbf;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-basic:not(:disabled):not(.disabled):focus, body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-secondary:not(:disabled):not(.disabled):focus {
+  border-color: #005fbf;
+  box-shadow: 0 0 4px 1px #005fbf;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-ghost:not(:disabled):not(.disabled):focus {
+  background-color: #0000;
+  border-color: #005fbf;
+  box-shadow: 0 0 4px 1px #005fbf;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn.btn-link:not(:disabled):not(.disabled):focus {
+  text-decoration: none;
+  box-shadow: 0 0 0 2px #1357ff4d;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-group .dropdown-toggle-split.btn-basic:not(:hover):not(:focus), body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-group .dropdown-toggle-split.btn-secondary:not(:hover):not(:focus) {
+  border-left: none;
+  padding-left: 9px;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-group.dropleft .dropdown-toggle-split.btn-secondary:not(:hover):not(:focus) {
+  border-left: 1px solid #e2e2e2;
+  padding-left: 8px;
+}
+
+body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-group.dropleft ~ .btn-basic:not(:hover):not(:focus), body.subscription-notice-opened.subscription-notice-legacy #subscriptionNoticeModal___BV_modal_outer_ .btn-group.dropleft ~ .btn-secondary:not(:hover):not(:focus) {
+  border-left: none;
+  padding-left: 9px;
+}
+
+[data-v-451cc69f] .mkvue .table tr::hover {
+  background: var(--cloud) !important;
+}
+
+[data-v-6fd6fa78] .mkvue .table tr::hover {
+  background: var(--cloud) !important;
+}
+
+::v-deep .ic-reset-fill {
+  top: 7px !important;
+}
+
+.btn.btn-ghost[data-v-1aa4eef0]:not(:disabled):not(.disabled):focus {
+  box-shadow: none;
+  border-color: #0000;
+}
+
+[data-v-d0eb2c4e] .custom-select:disabled:not(:focus) {
+  color: var(--dust) !important;
+}
+
+[data-v-d0eb2c4e] .custom-select:not(:focus) {
+  color: var(--dark) !important;
+}
+
+[data-v-7bf9ffc9] .custom-select:disabled:not(:focus) {
+  color: var(--dust) !important;
+}
+
+[data-v-7bf9ffc9] .custom-select:not(:focus) {
+  color: var(--dark) !important;
+}
+
+[data-v-c9332112] .input-datepicker:not(:disabled)::-moz-placeholder {
+  color: var(--noir) !important;
+}
+
+.tl-tab[data-v-6d16fffb] {
+  border-bottom: 1px solid #e2e2e2;
+  display: flex;
+}
+
+.tl-tab__item[data-v-6d16fffb] {
+  background-color: unset;
+  border-radius: unset;
+  color: #777;
+  cursor: pointer;
+  border: none;
+  width: auto;
+  margin-left: 24px;
+  padding: 16px 0;
+}
+
+.tl-tab__item[data-v-6d16fffb]:first-child {
+  margin-left: 0;
+}
+
+.tl-tab__item.active[data-v-6d16fffb], .tl-tab__item[data-v-6d16fffb]:hover:not(:disabled) {
+  color: #212121;
+  font-weight: 500;
+  box-shadow: inset 0 -2px #c02a34;
+}
+
+.tl-tab__item[data-v-6d16fffb]:focus {
+  outline: 0;
+}
+
+.tab-wrapper .tl-card[data-v-5e9a2d7d] {
+  max-width: 600px;
+}
+
+.tl-task-detail__modal .dropdown .dropdown-toggle.dropdown-green:not(:disabled):not(.disabled):hover {
+  background-color: #008651;
+  border-color: #008651;
+}
+
+.tl-task-detail__modal .dropdown .dropdown-toggle.dropdown-green:not(:disabled):not(.disabled):focus {
+  border-color: #009f61;
+  box-shadow: 0 0 0 .2rem #00865180;
+}
+
+.tl-task-detail__modal .dropdown .dropdown-toggle.dropdown-yellow:not(:disabled):not(.disabled):hover {
+  background-color: #eba900;
+  border-color: #eba900;
+}
+
+.tl-task-detail__modal .dropdown .dropdown-toggle.dropdown-yellow:not(:disabled):not(.disabled):focus {
+  border-color: #ffb700;
+  box-shadow: 0 0 0 .2rem #ffb70080;
+}
+
+/*# sourceMappingURL=foo.bc2dc990.css.map */
