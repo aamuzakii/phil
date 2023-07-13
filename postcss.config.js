@@ -1,7 +1,9 @@
+const purgecss = require("@fullhuman/postcss-purgecss");
+
 module.exports = {
   plugins: [
-    require("postcss-uncss")({
-      html: ["index.html"],
+    purgecss({
+      content: ["./src/**/*.html"],
     }),
   ],
 };
