@@ -221,7 +221,6 @@
     box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  
   .mkvue .custom-select {
     transition: none;
   }
